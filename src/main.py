@@ -60,7 +60,7 @@ def main():
 
     logger.info("Loading Data...")
 
-    # 
+    # Load the raw data from the CSV file
     df = load_data("data/policy_analysis_data.csv")
 
     logger.info("Preprocessing Data...")
@@ -101,12 +101,6 @@ def main():
     # Save the final model dataset
     df.to_csv("outputs/tables/final_model_dataset.csv", index=False)
 
-    # Save the regression summary to a text file
-    with open(
-                "outputs/tables/regression_summary.txt", "w", encoding="utf-8"
-            ) as f:
-                f.write(model.summary().as_text())
-
     # Define the target column and policy variable for the counterfactual analysis
     target_column = "GDP_Growth"
 
@@ -117,6 +111,14 @@ def main():
 
     # Train the model using the preprocessed panel dataset
     model, model_df = train_model(df,target_column)
+
+    # Save the regression summary to a text file
+    with open(
+            "outputs/tables/regression_summary.txt",
+            "w", 
+            encoding="utf-8"
+        ) as f:
+            f.write(model.summary().as_text())
 
     # Evaluate the trained model
     metrics = evaluate_model(model)
@@ -174,7 +176,6 @@ def main():
     logger.info(summary_stats)
 
 
-# Main execution block for the script
 if __name__ == "__main__":
     main()
 
