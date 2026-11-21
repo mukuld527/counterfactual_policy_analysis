@@ -179,7 +179,7 @@ Evaluating the Impact of Policy Changes on Economic Outcomes
 
 
 ```
-
+Project folder structure
 
 📦 counterfactual_policy_analysis
 ├── 📁 data
