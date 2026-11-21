@@ -168,11 +168,9 @@ Results may vary depending on model assumptions.
 ## Author
 
 Mukul Kumar Dhali
+PhDAI 730: Statistics for AI
 
-Project 2:
-Evaluating the Impact of Policy Changes on Economic Outcomes
-
-
+Project name: Project 2 - Evaluating the Impact of Policy Changes on Economic Outcomes
 
 
 
