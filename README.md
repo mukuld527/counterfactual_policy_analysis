@@ -167,9 +167,7 @@ Results may vary depending on model assumptions.
 
 ## Author
 
-Student Name
-
-Course Name
+Mukul Kumar Dhali
 
 Project 2:
 Evaluating the Impact of Policy Changes on Economic Outcomes
